@@ -7,7 +7,7 @@ int CountingTrailingZeros(int n){
 	
 	// contagem de quantas vezes e possivel divir o fatorial por 5 e seus multiplos
 	for(int i=5; n/i >= 1; i *= 5)
-		count = n/i;
+		count += n/i;
 	
 	return count;
 }
